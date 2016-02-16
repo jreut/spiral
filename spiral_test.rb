@@ -20,11 +20,13 @@ class SpiralTest < Minitest::Test
   end
 
   def test_tiny_grid_returns_flattened_self
+    skip
     grid = grid_for [%w(tiny)]
     assert_equal grid.rows.flatten, @klass.new(grid: grid).to_a
   end
 
   def test_small_square_grid_clockwise_spiral
+    skip
     grid = grid_for [
       %w(a b c),
       %w(d e f),
@@ -35,6 +37,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_squat_rectangular_grid_makes_clockwise_spiral
+    skip
     grid = grid_for [
       %w(a b c d),
       %w(e f g h),
@@ -45,6 +48,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_tall_rectangular_grid_makes_clockwise_spiral
+    skip
     grid = grid_for [
       %w(a b c),
       %w(d e f),
@@ -56,6 +60,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_bigger_grid_makes_clockwise_spiral
+    skip
     grid = grid_for [
       %w(a b c d e f g),
       %w(h i j k l m n),
@@ -68,6 +73,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_counterclockwise_spiral
+    skip
     grid = grid_for [
       %w(a b c d e f g),
       %w(h i j k l m n),
@@ -80,6 +86,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_clockwise_from_top_right_corner
+    skip
     grid = grid_for [
       %w(a b c d e),
       %w(f g h i j),
@@ -91,6 +98,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_clockwise_from_bottom_right_corner
+    skip
     grid = grid_for [
       %w(a b c d e),
       %w(f g h i j),
@@ -102,6 +110,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_clockwise_from_bottom_left_corner
+    skip
     grid = grid_for [
       %w(a b c d e),
       %w(f g h i j),
@@ -113,6 +122,7 @@ class SpiralTest < Minitest::Test
   end
 
   def test_5x4_from_bottom_left_counterclockwise
+    skip
     grid = grid_for [
       %w(a b c d e),
       %w(f g h i j),
